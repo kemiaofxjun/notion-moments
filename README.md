@@ -34,6 +34,10 @@
 - Notion API Token
 - Twikoo 环境 ID（可选）
 
+### 0. 复制 Notion 模板
+项目使用的 Notion 模板已公开，模板链接：https://lusyoe.notion.site/23b9161fd46b809e8e6adb032cf73dd4
+可将该模板复制到自己的 Notion 空间中，然后进行后续的步骤。
+
 ### 1. 克隆项目
 
 ```bash
