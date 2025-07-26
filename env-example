@@ -1,0 +1,5 @@
+NOTION_TOKEN=<notion-integration-token>
+NOTION_DATABASE_ID=<notion-database-id>
+NEXT_PUBLIC_TWIKOO_URL=<twikoo-url>
+NEXT_PUBLIC_BLOG_URL=<blog-url>
+NOTION_DAY_RANGE=90
