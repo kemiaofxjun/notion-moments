@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^7.0.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@notionhq/client": "^4.0.1",
+    "dayjs": "^1.11.13",
+    "next": "^15.4.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-markdown": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@types/react": "^19.1.8",
+    "typescript": "5.8.3"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node scripts/generate-json.js",
+    "start": "next start"
+  }
+}
