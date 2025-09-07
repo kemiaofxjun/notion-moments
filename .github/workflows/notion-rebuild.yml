@@ -1,0 +1,21 @@
+name: 每15分钟跑一次github action
+
+# 1) 定时触发：每 30 分钟跑一次（可自行改）
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # UTC 时间；北京时间 UTC+8
+  workflow_dispatch:        # 2) 手动触发按钮（可选）
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      # 2.1 检出代码（主要是为了拿到最后一次 commit 时间）
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      # 2.2 调用 Vercel 的 Deploy Hook（无服务器方案）
+      - name: Trigger Vercel rebuild
+        run: |
+          curl -X POST "${{ secrets.VERCEL_DEPLOY_HOOK }}"
